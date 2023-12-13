@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="bg-dark">
+    <div class="d-flex justify-content-center align-items-center mt-5">
+        <div>
+            <button type="button" class="btn btn-warning btn-lg" onclick="calulateArea(25,45)">Calculate Area in Square Feet</button>
+        </div>
+        
+    </div>
+    <div class="d-flex justify-content-center align-items-center mt-5">
+        <div>
+            <h1 class="text-warning" id="showarea"></h1>
+        </div>
+    </div>
+    <script>
+        function calulateArea(){
+            var userWidth = prompt("Enter Width For Area Property");
+            var userLength = prompt("Enter Lenght For Area Property");
+        var calculatedArea =userWidth * userLength;
+       document.getElementById('showarea').innerHTML=calculatedArea;
+         
+        }
+    </script>
+  </body>
+</html>
